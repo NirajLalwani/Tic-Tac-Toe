@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="164dp"
+            android:layout_height="153dp"
+            app:srcCompat="@drawable/logo"
+            android:layout_marginBottom="20sp"
+            />
+
+        <EditText
+            android:id="@+id/player1Name"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="Enter Player 1's Name" />
+
+        <EditText
+            android:id="@+id/player2Name"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="Enter Player 2's Name" />
+
+        <Button
+            android:id="@+id/start"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="35dp"
+            android:background="#7787CC"
+            android:onClick="handleGameStart"
+            android:padding="10dp"
+            android:text="Start Game"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

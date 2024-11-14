@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="box_button">#2D3C49</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

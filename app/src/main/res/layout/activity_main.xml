@@ -1,0 +1,135 @@
+<!-- res/layout/activity_main.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40sp"
+        android:text="Tic Tac Toe"
+        android:textColor="@color/black"
+        android:textSize="60sp" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40sp"
+        android:background="#fff"
+        android:columnCount="3"
+        android:rowCount="3">
+
+
+        <Button
+            style="@style/CommonButtonStyle"
+            android:layout_marginLeft="0sp"
+            android:layout_marginTop="0sp"
+            android:text="" />
+
+        <Button
+            style="@style/CommonButtonStyle"
+            android:layout_marginTop="0sp"
+            android:text="" />
+
+
+        <Button
+            style="@style/CommonButtonStyle"
+            android:layout_marginTop="0sp"
+            android:layout_marginRight="0sp"
+            android:text="" />
+
+        <Button
+            style="@style/CommonButtonStyle"
+            android:layout_marginLeft="0sp"
+            android:layout_marginTop="0sp"
+            android:text="" />
+
+        <Button
+            style="@style/CommonButtonStyle"
+            android:layout_marginTop="0sp"
+            android:text="" />
+
+        <Button
+            style="@style/CommonButtonStyle"
+            android:layout_marginTop="0sp"
+            android:layout_marginRight="0sp"
+            android:text="" />
+
+        <Button
+            style="@style/CommonButtonStyle"
+            android:layout_marginLeft="0sp"
+            android:layout_marginTop="0sp"
+            android:layout_marginBottom="0sp"
+            android:text="" />
+
+        <Button
+            style="@style/CommonButtonStyle"
+            android:layout_marginTop="0sp"
+            android:layout_marginBottom="0sp"
+            android:text="" />
+
+        <Button
+            style="@style/CommonButtonStyle"
+            android:layout_marginTop="0sp"
+            android:layout_marginRight="0sp"
+            android:layout_marginBottom="0sp"
+            android:text="" />
+
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:text="Player 1 Turn"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+
+    <Button
+        android:id="@+id/back"
+        android:onClick="handleBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="35sp"
+        android:background="#7787CC"
+        android:padding="10sp"
+        android:text="⬅️ Back"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        />
+
+    <Button
+        android:id="@+id/restart"
+        android:onClick="handleGameRestart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="35sp"
+        android:background="#7787CC"
+        android:padding="10sp"
+        android:text="🔃 Restart"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:textAllCaps="false"
+        />
+
+    </RelativeLayout>
+</LinearLayout>
